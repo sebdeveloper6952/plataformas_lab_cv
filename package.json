@@ -1,0 +1,29 @@
+{
+  "name": "explab",
+  "version": "1.0.0",
+  "description": "Plataformas",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "nodemon": "^1.17.4",
+    "pug": "^2.0.3"
+  },
+  "nodemonConfig": {
+    "restartable": "rs",
+    "ignore": [
+      "nodE_modules/**/node_modules"
+    ],
+    "delay": "2500",
+    "env": {
+      "NODE_EV": "development",
+      "PORT": 4000
+    }
+  }
+}
